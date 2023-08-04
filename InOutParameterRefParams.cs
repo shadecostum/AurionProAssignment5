@@ -25,16 +25,6 @@ namespace ParameterInOut
             Console.WriteLine("------end-------");
 
 
-            Console.WriteLine("---params used---");
-            //params used array  syntatic sugar,it can dynamical values enter used function ,last of method write params 
-            int[] array1 = { 10, 20, 30, 40 };
-            arrayParams(array1);
-            arrayParams();
-            arrayParams(15,25,38,65);
-            //normal array syntaticaly time consume;
-            Console.WriteLine("------end-------");
-
-
 
             Console.WriteLine("---Reference parameter---");
             //refrence key used ref
@@ -86,23 +76,7 @@ namespace ParameterInOut
 
 
 
-        //params mainly used it helps you to create dynamic input parameters
-        //a single method can accept more variables to calculate
-        private static void arrayParams(params int[] array1)
-        {
-            int sum = 0;
-            foreach (int item in array1)
-            {
-                //Console.WriteLine("params used :"+item);
-                sum=sum + item;
-               
-                
-
-            }
-            Console.WriteLine("result params:"+sum);
-            Console.WriteLine("------");
-           
-        }
+       
 
        
     }
