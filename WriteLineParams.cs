@@ -22,6 +22,9 @@ namespace ParamsWriteLine
 
 
             Console.WriteLine("---WriteLine used---");
+            //yes we can use params in writeLine public static void WriteLine(string format, params object[] arg)
+            Console.WriteLine("10 " + 1 + " " + 2 + " " + 4.5);//here string=10 and all other numbers print so 1,2,4.5 is a params array
+            
             PrintNumbers(1, 2, 3); // Pass three arguments
             PrintNumbers(); // Pass no arguments
             int[] nums = { 4, 5, 6 }; // Create an array of integers
